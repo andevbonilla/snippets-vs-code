@@ -2,7 +2,7 @@
 
 ```
 {
-	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
 	// same ids are connected.
@@ -68,9 +68,31 @@
 	"Get Server Side Props": {
 		"prefix": "getserverside",
 		"body": [
-			"export async function getServerSideProps(context) {",
+			"export const getServerSideProps = async(ctx) => {",
 			"  return {",
 			"    props: {},",
+			"  }",
+			"}"
+		]
+	},
+	"Get Static Paths": {
+		"prefix": "getstaticpaths",
+		"body": [
+			"export const getStaticPaths = async(ctx) => {",
+			"  return {",
+			"    paths: [],",
+			"    fallback: 'blocking'",
+			"  }",
+			"}"
+		]
+	},
+	"Get Static Props": {
+		"prefix": "getstaticprops",
+		"body": [
+			"export const getStaticProps = async({ params }) => {",
+			"  return {",
+			"    props: {},",
+			"    revalidate: 60 * 60 * 24",
 			"  }",
 			"}"
 		]
