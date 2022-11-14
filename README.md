@@ -108,6 +108,14 @@
 			"",
 			"}"
 		]
+	},
+	"Create JavaScript Function": {
+		"prefix": "jsfunction",
+		"body": [
+			"const $1 = () => {",
+			"",
+			"}"
+		]
 	}
 }
 ```
