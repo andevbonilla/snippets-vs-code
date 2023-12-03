@@ -48,29 +48,57 @@
 			"interface Props extends StackScreenProps<RootStackParams, ''>{};",
 		]
 	},
-	"Next Document Component": {
-		"prefix": "nextdoc",
-		"body": [
-			"import { Html, Head, Main, NextScript } from 'next/document'",
-			"export default function Document() {",
-			" return (",
-			"   <Html>",
-			"      <Head />",
-			"      <body>",
-			"          <Main />",
-			"          <NextScript />",
-			"      </body>",
-			"   </Html>",
-			" )",
-			"}"
-		]
-	},
 	"Create JavaScript Function": {
 		"prefix": "jsfunct",
 		"body": [
 			"const $1 = () => {",
 			"",
 			"}"
+		]
+	},
+	"Tailwind Create Center Component": {
+		"prefix": "tailcenter",
+		"body": [
+			"<div className='flex items-center justify-center'>",
+			"	",
+			"</div>"
+		]
+	},
+	"Tailwind Create Grid Component": {
+		"prefix": "tailgrid",
+		"body": [
+			"<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4'>",
+			"	<div>1</div>",
+			"	<div>2</div>",
+			"	<div>3</div>",
+			"</div>"
+		]
+	},
+	"Tailwind Create Button Component": {
+		"prefix": "tailbutton",
+		"body": [
+			"<button type='button' className='rounded py-3 px-4 text-white bg-[$1]'>",
+			"	$2",
+			"</button>"
+		]
+	},
+	"Tailwind Create Form Component": {
+		"prefix": "tailform",
+		"body": [
+			"<form onSubmit={$1} className=''",
+			"	<button type='submit' className='rounded py-3 px-4 text-white bg-[$2]'>$3</button>",
+			"</form>"
+		]
+	},
+	"Next Image Component": {
+		"prefix": "nextimg",
+		"body": [
+			"<Image",
+			"	src={require('@/assets/flag-for-flag-china-svgrepo-com.svg')}",
+			"	alt='$1'",
+			"	width={$2}",
+			"	height={$3}",
+			"/>"
 		]
 	}
 }
