@@ -65,52 +65,8 @@
 			"}"
 		]
 	},
-	"Get Server Side Props": {
-		"prefix": "getserverside",
-		"body": [
-			"export const getServerSideProps = async(ctx) => {",
-			"  return {",
-			"    props: {},",
-			"  }",
-			"}"
-		]
-	},
-	"Get Static Paths": {
-		"prefix": "getstaticpaths",
-		"body": [
-			"export const getStaticPaths = async(ctx) => {",
-			"  return {",
-			"    paths: [],",
-			"    fallback: 'blocking'",
-			"  }",
-			"}"
-		]
-	},
-	"Get Static Props": {
-		"prefix": "getstaticprops",
-		"body": [
-			"export const getStaticProps = async({ params }) => {",
-			"  return {",
-			"    props: {},",
-			"    revalidate: 60 * 60 * 24",
-			"  }",
-			"}"
-		]
-	},
-	"Create Next Route": {
-		"prefix": "nextroute",
-		"body": [
-			"export default async function handler(req, res) {",
-			"",
-			"  res.status(200).json({",
-			"    message: 'Hello world'",
-			"  })",
-			"",
-			"}"
-		]
-	},
 	"Create JavaScript Function": {
-		"prefix": "jsfunction",
+		"prefix": "jsfunct",
 		"body": [
 			"const $1 = () => {",
 			"",
